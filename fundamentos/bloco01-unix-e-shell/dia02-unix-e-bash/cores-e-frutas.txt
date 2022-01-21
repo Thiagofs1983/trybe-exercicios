@@ -1,0 +1,8 @@
+azul
+banana
+branco
+laranja
+maca
+morango
+preto
+roxo
