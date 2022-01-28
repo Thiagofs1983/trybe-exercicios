@@ -34,3 +34,33 @@ li em {
 ul li span {
     background-color: pink;
 }
+
+ul li a {
+    list-style: none;
+    
+}
+
+ul li a.stack:hover {
+    font-weight: bold;
+    color: orange;
+}
+
+ul li a.w3s:hover {
+    font-weight: bold;
+    color: green;
+}
+
+ul li a.mdn:hover {
+    font-weight: bold;
+    color: black;
+}
+
+ul li a.devdocs:hover {
+    font-weight: bold;
+    color: yellow;
+}
+
+ul li a.trybe:hover {
+    font-weight: bold;
+    color: green;
+}
