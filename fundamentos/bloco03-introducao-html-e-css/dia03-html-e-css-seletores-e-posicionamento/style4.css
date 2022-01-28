@@ -26,3 +26,11 @@ li {
 li em {
     font-weight: bold;
 }
+
+.corazul {
+    color:blue
+}
+
+ul li span {
+    background-color: pink;
+}
