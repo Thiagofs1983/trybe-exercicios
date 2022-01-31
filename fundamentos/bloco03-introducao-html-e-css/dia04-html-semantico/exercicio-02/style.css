@@ -1,4 +1,59 @@
+body {
+    background-color: #fff0e4;
+    text-align: center;
+    width: 70%;
+    padding-left: 15%;
+    
+}
+
+.nav-cabecalho {
+    background-color: #F3E1C2;
+    text-align: center;
+    
+}
+
 .nav-pag li {
     display: inline-block;
     margin-right: 55px;
+    padding: 10px;
+    background-color: #EDC4B1;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.nav-pag li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-pag li:hover {
+    background-color: #AAB2F4;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#paginainicial {
+    text-align: center;
+}
+
+table tr td {
+    border: 1px solid cadetblue;
+    width: 600px;
+    font-size: 18px;
+    
+}
+
+.imagens {
+    width: 600px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.referencias li {
+    list-style: none;
+    line-height: 30px;
 }
