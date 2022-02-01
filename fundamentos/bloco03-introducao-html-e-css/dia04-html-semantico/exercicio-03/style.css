@@ -1,0 +1,45 @@
+#header {
+    border: 2px solid black;
+    background-color: rgb(235, 38, 38);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#nav {
+    border: 2px solid black;
+    background-color: rgb(240, 167, 167);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#main {
+    border: 2px solid black;
+    background-color: rgb(163, 240, 100);
+    text-align: center;
+}
+
+.section-main {
+    border: 2px solid blue;
+    background-color: rgb(223, 212, 233);
+    height: 400px;
+    display: inline-block;
+    width: 80%;
+    ;
+}
+
+#aside {
+    border: 2px solid blue;
+    background-color: rgb(223, 212, 233);
+    height: 400px;
+    display: inline-block;
+    width: 19%;
+    vertical-align: top;
+}
+
+#footer {
+    border: 2px solid black;
+    background-color: rgb(235, 38, 38);
+    text-align: center;
+}
