@@ -1,13 +1,16 @@
-const pecaXadrez = 'Torre'
+const pecaXadrez = 'RaInHA'
 
-switch (pecaXadrez) {
-    case 'Bispo':
-        console.log('Movimento em L')
+switch (pecaXadrez.toLowerCase()) {
+    case 'bispo':
+        console.log('Movimento em Diagonal');
         break
-    case 'Torre':
-        console.log('Movimentos verticais e horizontais')
+    case 'torre':
+        console.log('Movimentos verticais e horizontais');
+        break
+    case 'rainha':
+        console.log('Todos os movimentos');
         break
     default:
-        console.log('Peça invalida')
+        console.log('Peça invalida');
         break
 }
