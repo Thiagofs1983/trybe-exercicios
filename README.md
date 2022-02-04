@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - Lessons Learned](http://127.0.0.1:5501/projeto-bloco-3/index.html)_
+- [x] 3-5: _[Projeto - Lessons Learned](https://thiagofs1983.github.io/projeto-bloco-3/index.html)_
 ​
 ##### Bloco 4: Introdução à JavaScript & Lógica de Programação
 ​
