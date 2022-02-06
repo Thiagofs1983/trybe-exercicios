@@ -1,4 +1,4 @@
-const a = 2;
+const a = Math.floor(Math.random() * 100 + 1);
 const b = 3;
 
 const adicao = a + b;

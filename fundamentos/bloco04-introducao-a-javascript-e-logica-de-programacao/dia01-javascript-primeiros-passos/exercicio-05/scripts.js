@@ -1,4 +1,7 @@
-let statusAprovacao = 40;
+let notas = [40, 50, 60, 80]
+
+let statusAprovacao = notas[Math.floor(Math.random() * 4)];
+console.log(statusAprovacao)
 
 switch (statusAprovacao) {
     case 80:

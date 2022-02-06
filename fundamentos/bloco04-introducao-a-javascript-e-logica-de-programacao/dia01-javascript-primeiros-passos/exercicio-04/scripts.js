@@ -1,4 +1,4 @@
-const currentHour = 6;
+const currentHour = Math.floor(Math.random() * 24);
 let message = "";
 
 if (currentHour >= 22) {
@@ -12,7 +12,7 @@ if (currentHour >= 22) {
 }else {
     message = 'Hummm, cheiro de café recém passado';
 }
-console.log(message)
+console.log(`São ${currentHour} horas. ${message}`)
 
 //OPERADOR E &&
 
@@ -60,7 +60,7 @@ console.log(true || false); // true
 console.log(false || true); // true
 console.log(false || false); // false*/
 
-let weekDay = 'quarta-feira';
+/* let weekDay = 'quarta-feira';
 weekDay = 'Sabado'
 weekDay = 'segunda-feira'
 
@@ -83,5 +83,5 @@ console.log(!0); // true
 
 console.log(!null); // true
 
-console.log(!undefined); // true
+console.log(!undefined); // true */
 
