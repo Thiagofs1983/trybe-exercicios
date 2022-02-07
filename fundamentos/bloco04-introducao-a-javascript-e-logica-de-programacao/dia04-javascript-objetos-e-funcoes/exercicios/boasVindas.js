@@ -11,3 +11,7 @@ console.log(info)
 for(let index in info) {
     console.log(index)
 }
+
+for (let index in info) {
+    console.log(info[index])
+}
