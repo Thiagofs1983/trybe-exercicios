@@ -27,14 +27,10 @@ let segundaInfo = {
   console.log(`${info.nota} e ${segundaInfo.nota}`)
   info.recorrente === 'sim' && segundaInfo.recorrente === 'sim' ? console.log('Ambos recorrentes') : console.log('Um ou mais não é recorrente') */
 
-  /* for (let itens in info) {
+  for (let itens in info) {
       if(itens === 'recorrente' && info[itens] === 'sim' && segundaInfo[itens] === 'sim') {
           console.log('Ambos recorrentes')
       }else {
           console.log(info[itens], ' e ', segundaInfo[itens])
       }
-  } */
-for (let itens in info) {
-    console.log(info[itens], ' e ', segundaInfo[itens])
-}
-  
+  }
