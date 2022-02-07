@@ -19,3 +19,6 @@ let leitor = {
       editora: 'Rocco',
   })
   console.log(leitor.livrosFavoritos)
+
+  let livrosFavoritos = leitor.livrosFavoritos.length
+  console.log(leitor.nome, 'tem', livrosFavoritos, 'livros favoritos.')
