@@ -27,7 +27,8 @@ let moradores = [
   
   let primeiroMorador = moradores[0];
   console.log(primeiroMorador); // { nome: 'Luiza', sobrenome: 'Guimarães', andar: 10, apartamento: 1005 }
-  console.log(primeiroMorador['andar']); // 10
+  console.log(primeiroMorador.andar); // 10
+  console.log(primeiroMorador['andar']) // 10
   
   let ultimoMorador = moradores[moradores.length - 1];
   console.log(ultimoMorador); // { nome: 'Zoey', sobrenome: 'Brooks', andar: 1, apartamento: 101 }
