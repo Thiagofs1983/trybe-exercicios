@@ -12,30 +12,23 @@ console.log(subtracao);
 console.log(multiplicacao);
 console.log(divisao);
 console.log(modulo); */
-function adicao(a, b) {
-    return a + b
-}
-console.log(adicao(2, 3))
 
-function subtracao(a, b) {
-    return a - b
+function calculadora (num1, operador, num2) {
+    if(operador === '+'){
+        return num1 + num2
+    }else if(operador === '-') {
+        return num1 - num2
+    }else if(operador === '*') {
+        return num1 * num2
+    }else if(operador === '/') {
+        return num1 / num2
+    }else if(operador === '%') {
+        return num1 % num2
+    }else {
+        return 'operador incorreto'
+    }
 }
-console.log(subtracao(2, 3));
-
-function multiplicacao(a, b) {
-    return a * b
-}
-console.log(multiplicacao(2, 3));
-
-function divisao(a, b) {
-    return a / b
-}
-console.log(divisao(4, 2));
-
-function modulo (a, b) {
-    return a % b
-}
-console.log(modulo(3, 2));
+console.log(calculadora(4, '*', 2));
 
 /* const a = Math.floor(Math.random() * 100 + 1);
 const b = Math.floor(Math.random() * 100 + 1);
