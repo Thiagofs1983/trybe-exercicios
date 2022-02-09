@@ -60,9 +60,13 @@
         document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - Javascript'
         let paragraph = document.getElementsByTagName('p')
         for (let index = 0; index < paragraph.length; index += 1) {
-            paragraph[index].style.textTransform = 'uppercase' //encontrada a solução em: https://www.htmlprogressivo.net/2014/02/Fonte-maiusculo-minusculo-CSS-text-transform-uppercase-lowercase-capitalize-Tutorial.html#:~:text=Fonte%20Mai%C3%BAscula%20em%20CSS%20%2D%20text%2Dtransform%3A%20uppercase&text=Para%20fazer%20isso%2C%20usamos%20a,(mai%C3%BAscula%2C%20em%20ingl%C3%AAs).
+            paragraph[index].style.textTransform = 'uppercase' //encontrada a solução do textTransform em: https://www.htmlprogressivo.net/2014/02/Fonte-maiusculo-minusculo-CSS-text-transform-uppercase-lowercase-capitalize-Tutorial.html#:~:text=Fonte%20Mai%C3%BAscula%20em%20CSS%20%2D%20text%2Dtransform%3A%20uppercase&text=Para%20fazer%20isso%2C%20usamos%20a,(mai%C3%BAscula%2C%20em%20ingl%C3%AAs).
         }
-        
+        let imprimir = document.getElementsByTagName('p')
+        for (let index = 0; index < imprimir.length; index += 1) {
+            console.log(imprimir[index].innerHTML)
+        }
+
       </script>
 </body>
 </html>
