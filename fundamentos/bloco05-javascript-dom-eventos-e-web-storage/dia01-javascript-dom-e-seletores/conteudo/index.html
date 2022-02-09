@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      const pageTitle = document.getElementById('page-title')
+      pageTitle.innerText = 'Não olhe para cima'
+      const secondParagraph = document.getElementById('second-paragraph')
+      secondParagraph.innerText = 'Filme de comédia que dá um tapa na nossa cara'
+      secondParagraph.style.color = 'blue'
+      let subtitle = document.getElementById('subtitle')
+      subtitle.innerText = 'Estilo do filme'
+      subtitle.toUppercase()
+    </script>
+  </body>
+</html>
