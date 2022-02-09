@@ -6,6 +6,8 @@
       <p id="paragraph">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
       <p id="second-paragraph">Segundo parágrafo!</p>
+      <p class="sobre-filme">Esse filme é bem polemico</p>
+      <p class="sobre-filme">Parece bastante com a realidade</p>
     </header>
     <script>
       const paragraph = document.getElementById("paragraph");
@@ -15,9 +17,13 @@
       const secondParagraph = document.getElementById('second-paragraph')
       secondParagraph.innerText = 'Filme de comédia que dá um tapa na nossa cara'
       secondParagraph.style.color = 'blue'
-      let subtitle = document.getElementById('subtitle')
+      const subtitle = document.getElementById('subtitle')
       subtitle.innerText = 'Estilo do filme'
-      subtitle.toUppercase()
+      const sobreFilme = document.getElementsByClassName("sobre-filme")
+      sobreFilme[0].style.color = 'green'
+      const subTitle = document.getElementsByTagName('h4')
+      subTitle[0].style.color = 'orange'
+
     </script>
   </body>
 </html>
