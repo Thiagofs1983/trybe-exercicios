@@ -73,7 +73,7 @@
         let tagMain = document.querySelector('main');
         let section = document.createElement('section');
         section.className = 'center-content'
-        main.appendChild(section)
+        tagMain.appendChild(section)
 
         // 4- Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
         let tagSection = section;
@@ -101,8 +101,8 @@
         // 8- Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
         let tagSectionRigth = sectionRight;
         let lista = document.createElement('ul');
-        sectionRight.appendChild(lista);
         lista.className = 'numbers-list'
+        sectionRight.appendChild(lista);
 
         const numbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
         let numbersList = document.querySelector('.numbers-list');
@@ -112,6 +112,16 @@
           numberListItem.innerText = number
           numbersList.appendChild(numberListItem);
         }
+
+        // 9- Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+        function subTitle (pai, elemento) {
+          let subTitle = document.createElement(elemento);
+          pai.appendChild(subTitle);
+          return subTitle
+        }
+        subTitle(tagMain, 'h3')
+        subTitle(tagMain, 'h3')
+        subTitle(tagMain, 'h3')
 
         
         console.log(document.querySelector('body').parentElement)
