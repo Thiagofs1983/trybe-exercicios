@@ -58,11 +58,21 @@
   </style>
 <body>
     <script>
-        //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
-        let criarTitulo = document.querySelector('body');
+        // 1- Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+        let body = document.querySelector('body');
         let titulo = document.createElement('h1');
-        titulo.innerText = 'Exercício 5.2 - JavaScript DOM'
-        criarTitulo.appendChild(titulo)
+        titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+        body.appendChild(titulo);
+
+        // 2- Adicione a tag main com a classe main-content como filho da tag body ;
+        let main = document.createElement('main');
+        main.className = 'main-content';
+        body.appendChild(main);
+
+        
+        
+        
+        console.log(document.querySelector('body').parentElement)
     </script>
 </body>
 </html>
