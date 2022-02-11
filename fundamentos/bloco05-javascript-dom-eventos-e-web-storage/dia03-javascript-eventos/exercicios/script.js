@@ -22,6 +22,14 @@ function createDaysOfTheWeek() {
     listaDias.innerHTML = dezDaysList[index]
     listaDias.className = 'day'
     diasMes.appendChild(listaDias)
+    if (dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
+        listaDias.className = 'day holiday'
+    }
+  }
+
+  for (let index = 0; index < dezDaysList.length; index += 1) {
+      
+
   }
 
   console.log(document.querySelector('body'))
