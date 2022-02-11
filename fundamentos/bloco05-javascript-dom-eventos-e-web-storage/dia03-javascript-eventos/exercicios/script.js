@@ -56,4 +56,13 @@ function criarDias() {
 }
 criarDias()
 
+function criarBotao(descricaoBotao, id) {
+    let buttonsContainer = document.querySelector('.buttons-container')
+    let btnFeriados = document.createElement('button')
+    btnFeriados.innerHTML = descricaoBotao
+    btnFeriados.id = id
+    buttonsContainer.appendChild(btnFeriados)
+}
+criarBotao('Feriados', 'btn-holiday')
+
 console.log(document.querySelector("body"));
