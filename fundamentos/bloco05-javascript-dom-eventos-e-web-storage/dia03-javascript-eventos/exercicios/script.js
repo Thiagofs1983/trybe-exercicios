@@ -64,7 +64,7 @@ function criarBotao(descricaoBotao, id) {
   buttonsContainer.appendChild(btnFeriados);
 }
 criarBotao("Feriados", "btn-holiday");
-criarBotao('Sexta-Feira', 'btn-friday')
+criarBotao("Sexta-Feira", "btn-friday");
 
 function mudaCor() {
   let mudaHoliday = document.querySelectorAll(".holiday");
@@ -80,48 +80,60 @@ function mudaCor() {
 
 function adicionaEventos() {
   let mudaCores = document.querySelector("#btn-holiday");
-  let mudaSextas = document.querySelector('#btn-friday')
+  let mudaSextas = document.querySelector("#btn-friday");
+  let taskSelected = document.querySelector(".task");
   mudaCores.addEventListener("click", mudaCor);
-  mudaSextas.addEventListener('click', mudaTexto);
+  mudaSextas.addEventListener("click", mudaTexto);
+  taskSelected.addEventListener('click', mudaClass);
 }
 
-
 function mudaTexto() {
-  let mudaSexta = document.querySelectorAll('.friday')
-  const fridayDez = [4, 11, 18, 25]
-  for(let index = 0; index < mudaSexta.length; index += 1) {
-    if(mudaSexta[index].innerText === 'SEXTOU') {
-      mudaSexta[index].innerHTML = fridayDez[index]
-    }else {
-      mudaSexta[index].innerText = 'SEXTOU'
+  let mudaSexta = document.querySelectorAll(".friday");
+  const fridayDez = [4, 11, 18, 25];
+  for (let index = 0; index < mudaSexta.length; index += 1) {
+    if (mudaSexta[index].innerText === "SEXTOU") {
+      mudaSexta[index].innerHTML = fridayDez[index];
+    } else {
+      mudaSexta[index].innerText = "SEXTOU";
     }
   }
 }
 
-let zoom = document.querySelectorAll('.day')
-for(let index = 0; index < zoom.length; index += 1){
-  zoom[index].addEventListener('mouseover', function(event) {
-    zoom.innerHTML = event.target.style.fontSize = '30px'
-  })
-  zoom[index].addEventListener('mouseout', function(event) {
-    zoom.innerHTML = event.target.style.fontSize = '20px'
-  })
+let zoom = document.querySelectorAll(".day");
+for (let index = 0; index < zoom.length; index += 1) {
+  zoom[index].addEventListener("mouseover", function (event) {
+    zoom.innerHTML = event.target.style.fontSize = "30px";
+  });
+  zoom[index].addEventListener("mouseout", function (event) {
+    zoom.innerHTML = event.target.style.fontSize = "20px";
+  });
 }
-let myTasks = document.querySelector('.my-tasks')
+let myTasks = document.querySelector(".my-tasks");
 function calendarTasks(nameTask, task) {
-  nameTask = document.createElement('span')
-  nameTask.innerHTML = task
-  myTasks.appendChild(nameTask)
+  nameTask = document.createElement("span");
+  nameTask.innerHTML = task;
+  myTasks.appendChild(nameTask);
 }
-calendarTasks('task1', 'cozinhar')
+calendarTasks("task1", "cozinhar");
 
 function legenda(cor) {
-  let corLegenda = document.createElement('div')
-  corLegenda.className = 'task'
-  corLegenda.style.backgroundColor = cor
-  myTasks.appendChild(corLegenda)
+  let corLegenda = document.createElement("div");
+  corLegenda.className = "task";
+  corLegenda.style.backgroundColor = cor;
+  myTasks.appendChild(corLegenda);
 }
-legenda('green')
+legenda("green");
+
+function mudaClass() {
+  let taskSelected = document.querySelector(".task");
+  if(taskSelected.className === 'task') {
+    taskSelected.className = 'task selected'
+  }else {
+    taskSelected.className = 'task'
+  }
+}
+
+
 
 window.addEventListener("load", adicionaEventos);
 
