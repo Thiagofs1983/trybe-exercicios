@@ -69,29 +69,20 @@ function mudaCor() {
   let mudaHoliday = document.querySelectorAll(".holiday");
   for (let index = 0; index < mudaHoliday.length; index += 1) {
     let cor = mudaHoliday[index];
-    if (cor.style.backgroundColor === "green") {
+    if (cor.style.backgroundColor === "rgb(190, 190, 190)") {
       cor.style.backgroundColor = "rgb(238, 238, 238)";
     } else {
-      cor.style.backgroundColor = "green";
+      cor.style.backgroundColor = "rgb(190, 190, 190)";
     }
   }
 }
-//mudaCor()
-
-/* function voltaCor() {
-    let mudaHoliday = document.querySelectorAll('.holiday')
-    for(let index = 0; index < mudaHoliday.length; index += 1){
-        mudaHoliday[index].style.backgroundColor = 'rgb(238,238,238)'
-    }
-} */
-//voltaCor()
 
 function adicionaEventos() {
   let mudaCores = document.querySelector("#btn-holiday");
   mudaCores.addEventListener("click", mudaCor);
-  //mudaCores.addEventListener('click', voltaCor)
 }
-//adicionaEventos()
+
+criarBotao('Sexta-Feira', 'btn-friday')
 
 window.addEventListener("load", adicionaEventos);
 
