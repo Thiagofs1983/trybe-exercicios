@@ -64,6 +64,7 @@ function criarBotao(descricaoBotao, id) {
   buttonsContainer.appendChild(btnFeriados);
 }
 criarBotao("Feriados", "btn-holiday");
+criarBotao('Sexta-Feira', 'btn-friday')
 
 function mudaCor() {
   let mudaHoliday = document.querySelectorAll(".holiday");
@@ -79,10 +80,23 @@ function mudaCor() {
 
 function adicionaEventos() {
   let mudaCores = document.querySelector("#btn-holiday");
+  let mudaSextas = document.querySelector('#btn-friday')
   mudaCores.addEventListener("click", mudaCor);
+  mudaSextas.addEventListener('click', mudaTexto);
 }
 
-criarBotao('Sexta-Feira', 'btn-friday')
+
+function mudaTexto() {
+  let mudaSexta = document.querySelectorAll('.friday')
+  const fridayDez = [4, 11, 18, 25]
+  for(let index = 0; index < mudaSexta.length; index += 1) {
+    if(mudaSexta[index].innerText === 'SEXTOU') {
+      mudaSexta[index].innerHTML = fridayDez[index]
+    }else {
+      mudaSexta[index].innerText = 'SEXTOU'
+    }
+  }
+}
 
 window.addEventListener("load", adicionaEventos);
 
