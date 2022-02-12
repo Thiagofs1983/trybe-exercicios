@@ -98,6 +98,16 @@ function mudaTexto() {
   }
 }
 
+let zoom = document.querySelectorAll('.day')
+for(let index = 0; index < zoom.length; index += 1){
+  zoom[index].addEventListener('mouseover', function(event) {
+    zoom.innerHTML = event.target.style.fontSize = '30px'
+  })
+  zoom[index].addEventListener('mouseout', function(event) {
+    zoom.innerHTML = event.target.style.fontSize = '20px'
+  })
+}
+
 window.addEventListener("load", adicionaEventos);
 
 console.log(document.querySelector("body"));
