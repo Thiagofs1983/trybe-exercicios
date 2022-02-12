@@ -107,6 +107,13 @@ for(let index = 0; index < zoom.length; index += 1){
     zoom.innerHTML = event.target.style.fontSize = '20px'
   })
 }
+let myTasks = document.querySelector('.my-tasks')
+function calendarTasks(nameTask, task) {
+  nameTask = document.createElement('span')
+  nameTask.innerHTML = task
+  myTasks.appendChild(nameTask)
+}
+calendarTasks('task1', 'cozinhar')
 
 window.addEventListener("load", adicionaEventos);
 
