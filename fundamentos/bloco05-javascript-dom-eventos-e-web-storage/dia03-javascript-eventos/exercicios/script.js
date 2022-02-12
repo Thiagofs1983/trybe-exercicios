@@ -54,15 +54,45 @@ function criarDias() {
     }
   }
 }
-criarDias()
+criarDias();
 
 function criarBotao(descricaoBotao, id) {
-    let buttonsContainer = document.querySelector('.buttons-container')
-    let btnFeriados = document.createElement('button')
-    btnFeriados.innerHTML = descricaoBotao
-    btnFeriados.id = id
-    buttonsContainer.appendChild(btnFeriados)
+  let buttonsContainer = document.querySelector(".buttons-container");
+  let btnFeriados = document.createElement("button");
+  btnFeriados.innerHTML = descricaoBotao;
+  btnFeriados.id = id;
+  buttonsContainer.appendChild(btnFeriados);
 }
-criarBotao('Feriados', 'btn-holiday')
+criarBotao("Feriados", "btn-holiday");
+
+function mudaCor() {
+  let mudaHoliday = document.querySelectorAll(".holiday");
+  for (let index = 0; index < mudaHoliday.length; index += 1) {
+    let cor = mudaHoliday[index];
+    if (cor.style.backgroundColor === "green") {
+      cor.style.backgroundColor = "rgb(238, 238, 238)";
+    } else {
+      cor.style.backgroundColor = "green";
+    }
+  }
+}
+//mudaCor()
+
+/* function voltaCor() {
+    let mudaHoliday = document.querySelectorAll('.holiday')
+    for(let index = 0; index < mudaHoliday.length; index += 1){
+        mudaHoliday[index].style.backgroundColor = 'rgb(238,238,238)'
+    }
+} */
+//voltaCor()
+
+function adicionaEventos() {
+  let mudaCores = document.querySelector("#btn-holiday");
+  mudaCores.addEventListener("click", mudaCor);
+  //mudaCores.addEventListener('click', voltaCor)
+}
+//adicionaEventos()
+
+window.addEventListener("load", adicionaEventos);
 
 console.log(document.querySelector("body"));
