@@ -115,6 +115,14 @@ function calendarTasks(nameTask, task) {
 }
 calendarTasks('task1', 'cozinhar')
 
+function legenda(cor) {
+  let corLegenda = document.createElement('div')
+  corLegenda.className = 'task'
+  corLegenda.style.backgroundColor = cor
+  myTasks.appendChild(corLegenda)
+}
+legenda('green')
+
 window.addEventListener("load", adicionaEventos);
 
 console.log(document.querySelector("body"));
