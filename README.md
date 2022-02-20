@@ -45,7 +45,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-5: _[Projeto - Arte com Pixels](https://thiagofs1983.github.io/projeto-bloco-5/pixel-arts/index.html)_
 - [x] 5-6: _[Projeto - Lista de tarefas](https://thiagofs1983.github.io/projeto-bloco-5/to-do-list/index.html)_
 - [ ] 5-7: _[Projeto - Meme Generator]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [ ] 5-7: _[Projeto - Adivinhe a Cor](https://thiagofs1983.github.io/projeto-bloco-5/color-guess/index.html)_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 ​
 ##### Bloco 6: HTML & CSS - Forms, Flexbox & Responsivo
