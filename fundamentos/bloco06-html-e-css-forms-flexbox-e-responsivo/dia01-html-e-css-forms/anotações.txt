@@ -1,0 +1,25 @@
+6.1
+
+HTML, CSS FORMS
+
+CSS
+CENTRALIZAR
+width: 80%
+margin: 0 auto
+
+
+Form
+action = manda para uma proxima pagina com um resultado
+
+<label> for="" entrelaça com o id do <input> 
+
+<fieldset>  // faz o campo com uma legenda acima
+   <legend>Tipo de palestra<legend/>
+   
+<selected>
+   <option>
+   
+<textarea> // Campo maior para usuario inserir textos. Permite limitar linhas e 		      colunas
+colocar na text area uma class e a propriedade resize: none
+
+
