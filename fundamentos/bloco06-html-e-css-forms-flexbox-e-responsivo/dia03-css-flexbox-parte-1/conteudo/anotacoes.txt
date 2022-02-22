@@ -1,0 +1,17 @@
+FLEXBOX
+
+Padrão é horizontal
+ - Flex-direction = row
+
+Podemos mudar para vertical
+ - Flex-direction = collun
+
+
+Justify-content é para o eixo definido como principal com relação ao espaço do container
+
+align-content é para o eixo definido como secundario com relação ao espaço do container
+
+align items é para o eixo definido como secundario com relação aos itens
+ -baseline é com relação a parte de baixo do texto
+
+flex-wrap quebra uma linha
