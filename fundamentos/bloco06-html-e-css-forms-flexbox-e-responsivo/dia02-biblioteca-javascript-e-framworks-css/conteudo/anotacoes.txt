@@ -1,0 +1,5 @@
+Bibliotecas CSS e JS
+
+- Buscar em getbootstrap.com e copiar o link referenciando na tag <link>
+
+Inserir um alerta = Consulta por Modal no bootstrap
