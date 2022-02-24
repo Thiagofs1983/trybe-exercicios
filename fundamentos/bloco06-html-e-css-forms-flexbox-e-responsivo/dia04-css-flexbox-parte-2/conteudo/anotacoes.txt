@@ -16,7 +16,18 @@ align items é para o eixo definido como secundario com relação aos itens
 
 flex-wrap quebra uma linha
 
+Align Self
+ - Modifica os itens individualmente
+
+Order
+ - Possibilita trocar a ordem dos elementos
+
 FLEX items
  - Grow aumenta o item selecionado para ocupar o espaço vazio disponivel no container pai. Por padrão é 0
  - Shrink diminui o item selecionado. Por padrão é 1
  - basis dá o valor padrão para o elemento. Por padrão é auto
+
+ background-size: cover para colocar a imagem na totalidade do container
+ background-clip: content-box
+                  border
+                  padding
