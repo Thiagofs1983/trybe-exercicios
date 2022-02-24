@@ -1,0 +1,22 @@
+FLEXBOX
+
+Padrão é horizontal
+ - Flex-direction = row
+
+Podemos mudar para vertical
+ - Flex-direction = collun
+
+
+Justify-content é para o eixo definido como principal com relação ao espaço do container
+
+align-content é para o eixo definido como secundario com relação ao espaço do container
+
+align items é para o eixo definido como secundario com relação aos itens
+ -baseline é com relação a parte de baixo do texto
+
+flex-wrap quebra uma linha
+
+FLEX items
+ - Grow aumenta o item selecionado para ocupar o espaço vazio disponivel no container pai. Por padrão é 0
+ - Shrink diminui o item selecionado. Por padrão é 1
+ - basis dá o valor padrão para o elemento. Por padrão é auto
