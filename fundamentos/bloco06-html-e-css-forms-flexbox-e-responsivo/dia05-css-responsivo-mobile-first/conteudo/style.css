@@ -77,3 +77,15 @@ body {
          display: block;
      }
  }
+
+ @media screen and (max-width: 650px) {
+     .card:nth-child(3) {
+         display: block;
+     }
+ }
+
+ @media screen and (min-width: 950px) {
+     .card:nth-child(3) {
+         display: block;
+     }
+ }
