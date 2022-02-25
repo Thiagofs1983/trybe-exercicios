@@ -16,7 +16,7 @@
   }
   
   article {
-  
+    line-height: normal;
   }
   
   h1 {
@@ -34,11 +34,11 @@
   }
   
   main {
-  
+    text-align: center;
   }
   
   section {
-  
+    margin-top: 10px;
   }
   
   figure {
