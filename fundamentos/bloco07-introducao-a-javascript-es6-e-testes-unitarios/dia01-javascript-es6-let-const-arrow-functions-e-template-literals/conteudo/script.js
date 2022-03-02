@@ -52,3 +52,17 @@ Terceira linha;`
 
 // Sem o template literals:
 console.log('Primeira linha;\n' + 'Segunda linha;\n' + 'Terceira linha;\n');
+
+function soma1(a, b) {
+    return a + b
+}
+console.log(soma1(1, 2))
+
+const soma = (a, b) => a + b
+console.log(soma(2, 2))
+
+const printName = nome => nome
+console.log(printName('Thiago'))
+
+const imprimeNome = () => nome = 'Fonseca'
+console.log(imprimeNome())
