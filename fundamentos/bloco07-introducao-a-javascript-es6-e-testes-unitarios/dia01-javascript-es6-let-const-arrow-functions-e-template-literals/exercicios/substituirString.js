@@ -1,7 +1,8 @@
-/* function recebeString (strDet, str) {
-    let newString = strDet.replace(/x/i, str)
-    return newString
-} */
+const skills = ['JavaScript', 'CSS', 'HTML', 'DOM', 'FlexBox'];
 
 const recebeString = (str, strDeterminada) => strDeterminada.replace(/x/i, str)
-console.log(recebeString('Thiago', 'Tryber x aqui!'))
+
+const concatenaInfo = () => `${recebeString('Thiago', 'Tryber x aqui!')} Minhas cinco principais habilidades são:
+${skills.sort()}.`
+
+console.log(concatenaInfo())
