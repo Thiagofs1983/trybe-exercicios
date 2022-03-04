@@ -1,0 +1,21 @@
+throw new Error é para enviar a mensagem
+
+try {
+    Se não ocorrer o erro, faça isso
+    colocar o bloco de código que funciona
+}
+
+catch(error) {
+    se ocorrer o erro, o que fazer
+    Pode emitir um alert por exemplo para o usuário
+}
+
+Object.keys = Vê as chaves do objeto e as coloca em um array
+    Object.keys(objeto)
+
+Object.values = Vê os valores do objeto e os coloca em um array
+    Object.values(objeto)
+
+Object.entries(objeto) = transforma o objeto em um array de array com chave e valor.
+
+Object.assign({}, objeto) = faz um "clone" dos objetos
