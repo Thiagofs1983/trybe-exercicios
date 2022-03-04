@@ -144,6 +144,3 @@ console.log(meuCarro) */
  /*  console.log(person)
   console.log(Object.keys(person))
   console.log(Object.values(person)) */
-  for(let index in person) {  
-    console.log(`${Object.keys(person)}: ${Object.values(person)}`)
-  }
