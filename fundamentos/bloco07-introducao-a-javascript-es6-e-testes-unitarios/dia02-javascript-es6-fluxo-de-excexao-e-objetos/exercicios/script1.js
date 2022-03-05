@@ -17,7 +17,8 @@ const lesson3 = {
   professor: "Maria Clara",
   turno: "noite",
 };
-const adicionaTurno = (obj, turno, noite) => {
-    obj[turno] = noite
-};
+const adicionaTurno = (obj, turno, noite) => obj[turno] = noite
 adicionaTurno(lesson2, 'turno', 'noite')
+
+const listaKeys = obj => console.log(Object.keys(obj))
+listaKeys(lesson2)
