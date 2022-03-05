@@ -26,3 +26,6 @@ listaKeys(lesson2)
 
 const tamanhoObjeto = obj => console.log(`O objeto tem ${Object.keys(obj).length} propriedades`)
 tamanhoObjeto(lesson2)
+
+const valoresObjeto = obj => console.log(Object.values(obj))
+valoresObjeto(lesson2)
