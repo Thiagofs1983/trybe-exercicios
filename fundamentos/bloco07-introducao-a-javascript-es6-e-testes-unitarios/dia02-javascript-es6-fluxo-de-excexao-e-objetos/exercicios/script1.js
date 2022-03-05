@@ -19,6 +19,10 @@ const lesson3 = {
 };
 const adicionaTurno = (obj, turno, noite) => obj[turno] = noite
 adicionaTurno(lesson2, 'turno', 'noite')
+console.log(lesson2)
 
 const listaKeys = obj => console.log(Object.keys(obj))
 listaKeys(lesson2)
+
+const tamanhoObjeto = obj => console.log(`O objeto tem ${Object.keys(obj).length} propriedades`)
+tamanhoObjeto(lesson2)
