@@ -19,7 +19,6 @@ const lesson3 = {
 };
 const adicionaTurno = (obj, turno, noite) => obj[turno] = noite
 adicionaTurno(lesson2, 'turno', 'noite')
-console.log(lesson2)
 
 const listaKeys = obj => console.log(Object.keys(obj))
 listaKeys(lesson2)
@@ -29,3 +28,22 @@ tamanhoObjeto(lesson2)
 
 const valoresObjeto = obj => console.log(Object.values(obj))
 valoresObjeto(lesson2)
+
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 })
+//console.log(allLessons)
+
+const totalEstudantes = obj => {
+    let lessons = Object.keys(obj)
+    let total = 0
+    for(let index = 0; index < lessons.length; index += 1) {
+        //console.log(lessons[index])
+        let key = lessons[index]
+        //console.log(key.numeroEstudantes) - Não acessa o objeto
+        //console.log(obj.key.numeroEstudantes) - Não acessa o objeto
+        console.log(obj[key].numeroEstudantes) // acessa os values do objeto
+        total += obj[key].numeroEstudantes
+    }
+    return total
+    
+}
+console.log(totalEstudantes(allLessons))
