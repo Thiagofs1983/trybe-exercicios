@@ -33,14 +33,14 @@ const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 })
 //console.log(allLessons)
 
 const totalEstudantes = obj => {
-    let lessons = Object.keys(obj)
+    let lessons = Object.keys(obj) // [lesson1, lesson2, lesson3]
     let total = 0
     for(let index = 0; index < lessons.length; index += 1) {
-        //console.log(lessons[index])
+        //console.log(lessons[index]) - acessa os valores do array
         let key = lessons[index]
         //console.log(key.numeroEstudantes) - Não acessa o objeto
         //console.log(obj.key.numeroEstudantes) - Não acessa o objeto
-        console.log(obj[key].numeroEstudantes) // acessa os values do objeto
+        //console.log(obj[key].numeroEstudantes) // acessa os values do objeto
         total += obj[key].numeroEstudantes
     }
     return total
@@ -66,3 +66,20 @@ const verifyPair = (obj, key, value) => {
 }
 
 console.log(verifyPair(lesson2, 'professor', 'Carlos'))
+
+const createReport = obj => {
+    const keys = Object.keys(obj)
+    //console.log(keys)
+    let quantAlunos = 0
+    for(let index = 0; index < keys.length; index += 1) {
+        //console.log(obj[keys[index]].numeroEstudantes) - acessa a quantidade de estudantes
+        let key = keys[index]
+        console.log(obj[key].materia)
+        if(obj[key].materia === 'Matemática') {
+            quantAlunos += obj[key].numeroEstudantes
+        }
+    }
+    return quantAlunos
+}
+
+console.log(createReport(allLessons))
