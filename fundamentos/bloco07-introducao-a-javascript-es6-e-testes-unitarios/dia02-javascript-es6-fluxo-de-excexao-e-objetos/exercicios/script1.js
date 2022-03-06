@@ -50,3 +50,19 @@ console.log(totalEstudantes(allLessons))
 
 const getValueByNumber = (obj, position) => Object.values(obj)[position]
 console.log(getValueByNumber(lesson1, 0))
+
+const verifyPair = (obj, key, value) => {
+    const arrayObj = Object.entries(obj)
+    //console.log(arrayObj)
+    //console.log(arrayObj.length)
+    let result = false
+    for(let index = 0; index < arrayObj.length; index += 1){
+        //console.log(arrayObj[index])
+        if(arrayObj[index][0] === key && arrayObj[index][1] === value) {
+            result = true
+        }
+    }
+    return result
+}
+
+console.log(verifyPair(lesson2, 'professor', 'Carlos'))
