@@ -67,19 +67,22 @@ const verifyPair = (obj, key, value) => {
 
 console.log(verifyPair(lesson2, 'professor', 'Carlos'))
 
-const createReport = obj => {
+const numberOfStudents = (obj, materia) => {
     const keys = Object.keys(obj)
     //console.log(keys)
     let quantAlunos = 0
     for(let index = 0; index < keys.length; index += 1) {
         //console.log(obj[keys[index]].numeroEstudantes) - acessa a quantidade de estudantes
         let key = keys[index]
-        console.log(obj[key].materia)
-        if(obj[key].materia === 'Matemática') {
+        //console.log(key)
+        //console.log(obj[key].materia)
+        if(obj[key].materia === materia) {
             quantAlunos += obj[key].numeroEstudantes
         }
     }
     return quantAlunos
 }
-
-console.log(createReport(allLessons))
+const alunosMatematica = numberOfStudents(allLessons, 'Matemática')
+const alunosHistoria = numberOfStudents(allLessons, 'História')
+console.log(`${alunosMatematica} alunos assistiram as aulas de Matemática.
+${alunosHistoria} alunos assistiram as aulas de História`)
