@@ -1,0 +1,13 @@
+INSTALAR O JEST
+
+-Verificar se o npm está instalado com o comando
+    npm -v
+    Obs.: Caso o npm não esteja instalado, deve instalar o mesmo
+
+-Entrar na pasta do projeto que iremos fazer e criar um novo package.json para o projeto
+    npm init -y
+
+-Alterar o conteudo da chave "test" dentro do arquivo package.json para "jest" e salvar o arquivo
+
+-Instalar o Jest dentro da pasta que criou o package.json executando o comando:
+    npm install --save-dev jest
