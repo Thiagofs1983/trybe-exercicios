@@ -18,7 +18,7 @@ JEST
 Quando for desenvolver pesquisar pelos matchers do JEST
 
 test('o texto que espera', () => {
-    expect(nome da funcao(parametro).toBe(resultado))
+    expect(nome da funcao(parametro)).toBe(resultado)
 })
 
 describe('Requisito 1', () => {
