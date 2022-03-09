@@ -1,13 +1,13 @@
 const createEmployee = fullname => {
     const email = `${fullname.toLowerCase().replace(/ /g, "_")}@trybe.com`
-    return { fullname, email}
+    return { fullname, email }
 }
 
-const newEmployees = createEmployee => {
+const newEmployees = callback => {
     const employees = {
-      id1: createEmployee('Pedro Guerra'),
-      id2: createEmployee('Luiza Drumond'),
-      id3: createEmployee('Carla Paiva'),
+      id1: callback('Pedro Guerra'),
+      id2: callback('Luiza Drumond'),
+      id3: callback('Carla Paiva'),
     }
     return employees;
   };

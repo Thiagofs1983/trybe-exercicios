@@ -7,9 +7,9 @@
 
 const resultSorteio = (numAposta, numSorteado) => numAposta === numSorteado ? 'Parabéns, você ganhou!' : 'Tente novamente'
 
-const sorteio = (numAposta, func) => {
+const sorteio = (numAposta, callback) => {
     let numAleatorio = Math.floor(Math.random() * 5 + 1)
     console.log(numAleatorio)
-    return func(numAposta, numAleatorio)
+    return callback(numAposta, numAleatorio)
 }
 console.log(sorteio(3, resultSorteio))
