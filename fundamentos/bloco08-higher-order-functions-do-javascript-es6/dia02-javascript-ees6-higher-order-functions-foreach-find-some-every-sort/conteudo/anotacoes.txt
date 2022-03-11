@@ -1,0 +1,9 @@
+FOREACH 
+Não retorna nada
+
+
+EVERY - retorna true ou false
+Retorna true quanto todos os elementos passam pela validação
+
+
+array.HOF(() => {})
