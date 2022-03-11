@@ -61,8 +61,14 @@ const books = [
     },
   ];
 
-const oldBooks = (arr, yearsOld, currentYear) => {
-  const booksOver = arr.filter(element => currentYear - element.releaseYear > yearsOld);
-  return booksOver.map(element => element.name)
-}
-console.log(oldBooks(books, 60, 2022))
+
+const authorWith3DotsOnName = (arr) => {
+    return arr.find((element) => (
+      element.author.name.split(' ')
+        .filter((word) => word.endsWith('.')).length === 3
+    )).name;
+  }
+
+  console.log(authorWith3DotsOnName(books))
+  const a = books.find((element) => element.author.name).name
+  console.log(a.split(' '))
