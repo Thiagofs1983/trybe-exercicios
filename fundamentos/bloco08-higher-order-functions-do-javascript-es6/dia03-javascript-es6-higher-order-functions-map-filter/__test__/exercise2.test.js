@@ -1,3 +1,5 @@
+const authorAgeAtRelease = require('../exercicios/exercise2');
+
 const books = [
     {
       id: 1,
@@ -60,12 +62,26 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  // Adicione o código do exercício aqui:
 
-function formatedBookNames(arr) {
-    return arr.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`)
-  }
-  //console.log(formatedBookNames(books))
-
-  module.exports = { formatedBookNames }
+describe('Teste 2', () => {
+    const resultExpected = [
+        { author: 'Isaac Asimov', age: 31 },
+        { author: 'H. P. Lovecraft', age: 38 },
+        { author: 'Stephen King', age: 39 },
+        { author: 'George R. R. Martin', age: 43 },
+        { author: 'Frank Herbert', age: 45 },
+        { author: 'J. R. R. Tolkien', age: 62 }
+      ]
+    it('Verifica se authorAgeAtRelease é uma função', () => {
+        expect(typeof authorAgeAtRelease).toBe('function')
+    })
+    it('Verifica se o resultado da função retorna o array esperado', () => {
+        expect(authorAgeAtRelease(books)).toEqual(resultExpected)
+    })
+    it('O primeiro objeto ter a chave age = 31', () => {
+        expect(authorAgeAtRelease(books)[0].age).toBe(31)
+    })
+    it('A função retorna um array?', () => {
+        expect(Array.isArray(authorAgeAtRelease(books))).toBe(true)
+    })
+})

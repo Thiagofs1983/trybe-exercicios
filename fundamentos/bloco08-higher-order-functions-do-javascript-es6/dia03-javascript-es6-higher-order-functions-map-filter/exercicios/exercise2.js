@@ -75,4 +75,6 @@ const authorAgeAtRelease = (arr) => {
   return authorAge.sort((a, b) => a.age - b.age)
 }
 
-console.log(authorAgeAtRelease(books))
+//console.log(authorAgeAtRelease(books))
+
+module.exports = authorAgeAtRelease
