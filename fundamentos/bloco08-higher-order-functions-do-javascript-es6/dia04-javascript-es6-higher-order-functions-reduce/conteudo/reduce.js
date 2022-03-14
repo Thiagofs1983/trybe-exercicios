@@ -33,7 +33,7 @@ const getSum = (result, number) => {
   const maiorValor = numbers.reduce(pegaMaiorValor, 0)
   console.log(maiorValor) */
 
-  const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+  //const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
 
   /* const getPares = (acc, crr) => {
     if (crr % 2 === 0) {
@@ -48,7 +48,7 @@ const getSum = (result, number) => {
   const somaPares = numbers.filter(pegaValoresPares).reduce(somaValoresPares, 0)
   console.log(somaPares) */
 
-  const estudantes = [
+/*   const estudantes = [
     {
       nome: 'Jorge',
       sobrenome: 'Silva',
@@ -130,4 +130,27 @@ const getSum = (result, number) => {
       materia: element.materias.reduce(bestSubject).name,
       //nota: element.materias.reduce(bestSubject).nota
   }))
-  console.log(reportBest())
+  console.log(reportBest()) */
+
+  const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+
+  const getPares = (element) => element % 2 === 0;
+  const getImpares = (element) => element % 2 === 1;
+  const getSum = (acc, cur) => acc + cur
+
+  console.log(`Números pares: ${numbers.filter(getPares)}`)
+  console.log(numbers.filter(getImpares))
+  console.log(numbers.filter(getPares).reduce(getSum, 0));
+  console.log(numbers.filter(getImpares).reduce(getSum, 0));
+  console.log(numbers.reduce(getSum, 0));
+
+  // Juntar um array de strings
+  const meuNome = ['Thiago', 'Fonseca', 'de', 'Souza']
+  const juntaNome = meuNome.reduce((acc, cur) => `${acc} ${cur}`)
+  console.log(juntaNome)
+  
+  const email = `${juntaNome.replace(/ /g, '').toLowerCase()}@hotmail.com`;
+  console.log(email)
+
+  //criar chave de forma dinâmica partindo de um objeto com acumulator[] = valor; 
+
