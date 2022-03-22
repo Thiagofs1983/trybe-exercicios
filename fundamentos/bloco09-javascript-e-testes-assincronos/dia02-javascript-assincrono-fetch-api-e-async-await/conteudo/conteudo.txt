@@ -1,0 +1,37 @@
+TRANSFORMAR UMA API EM DADOS DE JAVASCRIPT
+
+const nomeFunction = () => {
+fetch(`URL da API ${}`) - Vai retornar os dados da API
+
+.then((resposta) => {
+    return resposta.json();
+})
+.then((data) => {
+    //return data; // Vai retornar o objeto
+    CONSTRUIR O QUE VAI PRECISAR. EX: UM objeto que vai servir de parametro para outra função.
+    const dataObj = {
+        name: data.name,
+        imageUrl: dado.sprites.front_default,
+    }
+})
+.catch((error) => {
+    console.log(error)
+    alert('Aconteceu algo errado')
+})
+}
+
+REFATORANDO
+const fetchAsyncAwait = async (variavel) {
+    try {
+        const resposta = await fetch(`URL API ${variavel}`)
+    const dados = await resposta.json(); - Dados já é o objeto.
+    const obj = {
+        nome: dados.name,
+    }
+    chama a função e coloca o obj como parametro
+    }catch(error) {
+        console.log(error)
+    }
+}
+
+fetchAsyncAwait(variavel);
