@@ -4,9 +4,10 @@ import "./Pokemon.css";
 
 class Pokemon extends Component {
   render() {
-    const { name, type, averageWeight, image } = this.props.pokemon;
+    const { name, type, averageWeight, image, moreInfo } = this.props.pokemon;
+    const mostrarInfo = () => window.open(moreInfo, '_blank')
     return (
-      <li className="card">
+      <li className="card" onClick={mostrarInfo}>
         <section className="description">
           <h3>{name}</h3>
           <p>{type}</p>
