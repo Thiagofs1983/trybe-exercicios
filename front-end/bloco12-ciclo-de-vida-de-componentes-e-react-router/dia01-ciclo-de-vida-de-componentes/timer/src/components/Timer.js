@@ -27,7 +27,8 @@ class Timer extends Component {
         if (prevState.seconds === FIVE_SECONDS) {
             this.setState({
                 seconds: 0,
-                indexText: prevState.indexText === text.length -1 ? 0 : prevState.indexText + 1,
+                indexText: prevState.indexText === text.length -1
+                  ? 0 : prevState.indexText + 1,
             })
         }
     }
