@@ -6,7 +6,7 @@ const calcImc = (weight, height) => {
 }
 
 const main = () => {
-  const weight = readline.questionInt('Qual é o seu peso? (kg) ');
+  const weight = readline.questionFloat('Qual é o seu peso? (kg) ');
   const height = readline.questionInt('Qual a sua altura? (cm) ');
 
   const imc = calcImc(weight, height);
