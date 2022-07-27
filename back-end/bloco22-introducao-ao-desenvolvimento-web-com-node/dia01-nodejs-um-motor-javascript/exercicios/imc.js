@@ -1,11 +1,16 @@
+const readline = require('readline-sync');
+
 const calcImc = (weight, height) => {
-  console.log(`Peso: ${weight}kg, Altura: ${height}m`);
-  return (weight / Math.pow(height, 2)).toFixed(2);
+  console.log(`Peso: ${weight}kg, Altura: ${height / 100}m`);
+  return (weight / Math.pow(height / 100, 2));
 }
 
 const main = () => {
-  const imc = calcImc(80, 1.8);
-  console.log(`IMC: ${imc}`);
+  const weight = readline.questionInt('Qual é o seu peso? (kg) ');
+  const height = readline.questionInt('Qual a sua altura? (cm) ');
+
+  const imc = calcImc(weight, height);
+  console.log(`IMC: ${imc.toFixed(2)}`);
 }
 
 main();
