@@ -1,0 +1,12 @@
+[
+    {
+        "consoles": {
+            "reg1": "Nintendo",
+            "reg2": "PS"
+        },
+        "jogos": {
+            "jogo1": "Street Figther",
+            "jogo2": "Mortal Combat"
+        }
+    }
+]
